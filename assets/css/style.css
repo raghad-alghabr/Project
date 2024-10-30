@@ -1,0 +1,1192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo";
+
+}
+header{
+    height: 100vh;
+    max-width: 100%;
+}
+nav{
+    height: 72px;
+    padding: 12px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    
+    ul{
+        height: 72px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-weight: 600;
+    }
+    li.Home , .Blog , option{
+        width: 84px;
+        height: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    li.Home .Blog:active , li.Home .active , .Blog.active select{
+    background-color: #F5F5F5;
+    color: #FF782D;
+    }
+    select , option{
+        border: none;
+        outline: none;
+    }
+    .link{
+        width: 198px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    .href{
+        width: 130px;
+        display: flex;
+        justify-content: space-between;
+    }
+    a , p , select{
+        font-family: "Jost";
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        color: #000000;
+    }
+    .bars{
+        width: 24px;
+        height: 24px;
+        font-size: 18px;
+        background:none;
+        border: none;
+        display: none;
+    }
+}
+.Transportation{ /*تنسيق شريط التنقلات بين صفحة الهوم الكورس*/
+    width: 100%;
+    background-color: #F5F5F5;
+    padding: 12px 70px;
+    a{
+        text-decoration: none;
+    }
+    .Homepag , .Course{
+        font-family: "jost";
+        font-weight: 400;
+    }
+    .Homepage{
+        color: #555555;
+    }
+    .Course{
+        color: #9D9D9D;
+    }
+}
+.hero{ 
+    height: calc(100vh - 72px);
+    background-image: url(./../images/header/herobg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 70px;
+
+    .Build{
+        padding: 158px 0;
+        max-width: 520px;
+    }
+
+    h1{
+        font-size: 48px;
+        font-weight: 600;
+        margin: 0 24px 24px 0;
+    }
+
+    p{
+        margin: 0 0 24px 0;
+        color: #555555;
+        font-weight: 400;
+    }
+
+    p , .comment{
+        font-family: "jost"; 
+    }
+    .comment{
+        height: 48px;
+        width: 170px;
+        border: none;
+        border-radius: 24px;
+        background-color: #FF782D;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+#section1{  /*القسم الأول*/
+    padding: 70px 70px;
+    position: relative;
+    .Top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            font-size: 32px;
+            font-weight: 600;
+            margin: 0 0 12px 0;
+        }
+        p{
+            font-weight: 400;
+            color: #555555;
+        }
+        p , .All{
+            font-family: "jost";
+            font-size: 18px;
+        }
+        .All{
+            width: 161px;
+            height: 48px;
+            border: 2px solid #9D9D9D;
+            border-radius: 24px;
+            background-color: #ffffff;
+            font-weight: 500;
+        }
+    }
+    .Categories{
+        padding: 15px 0 0 0;
+        background-color: #ffffff;
+        max-width:100%;
+        margin: 50px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        .card{
+            width:100%;
+            max-width: 252px;
+            height: 234px;
+            background-color:#ffffff;
+            border: 1px solid #EAEAEA ;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        h3{
+            font-weight: 600;
+            font-size: 20px;
+            transition: color 0.3s
+        }
+        p{
+            line-height: 0;
+            font-family: "jost";
+            font-size: 18;
+            font-weight: 400;
+            color: #555555;
+        }
+        #Development:hover{
+            transform: translateY(-25px); /* تحريك الكارد للأعلى */
+             box-shadow: 0 0 15px rgba(234, 234, 234, 0.7); /* توهج الحواف */
+        }
+        #Development:hover h3{
+            color: #FF782D;
+        }
+    }  
+}
+#section2{ /*القسم الثاني*/
+    padding: 0 70px 70px 70px;
+    position: relative;
+    .Top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            font-size: 32px;
+            font-weight: 600;
+            margin: 0 0 12px 0;
+        }
+        p{
+            font-weight: 400;
+            color: #555555;
+        }
+        p , .All{
+            font-family: "jost";
+            font-size: 18px;
+        }
+        .All{
+            width: 139px;
+            height: 48px;
+            border: 2px solid #9D9D9D;
+            border-radius: 24px;
+            background-color: #ffffff;
+            font-weight: 500;
+        }
+    }
+    .Categories{/*حاوية الكروت الرئيسية*/
+        background-color:#ffffff;
+        margin: 50px 0 0 0;
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+        flex-wrap: wrap;
+        .card{ /* خصائص الكرت الواحد الحاوية على الصورة والكتابة */
+            width: 385px;
+            background-color:#ffffff;
+            border: 1px solid #EAEAEA ;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            flex-grow: 1; 
+            .Poitras{    /*الصورة الرئيسة للكرت */
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-top-left-radius: 20px ;
+                border-top-right-radius: 20px ;
+            }
+            .info{ /*الحاوية  على الكتابة الموجودة تحت الصورة */
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+            .by{  /*by Determined-Poitras الحاوية على */
+                display: flex;
+                align-items: center;
+                gap: 4px;
+            }
+            span , p{
+                font-family: "jost";
+                font-weight: 400;
+            }
+            span{
+                color: #555555;
+            }
+            h4{
+                font-size: 20px;
+                font-weight: 600;
+                padding: 0 50px 0 0;
+            }
+            .content{  /*<!--الحاوية على عددالطلاب و الأسابيع-->*/
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                border-bottom: 1px solid #EAEAEA;
+                padding: 0 0 16px 0;
+                p{
+                    color: #555555;
+                    font-weight: 400;
+                }
+            }
+            .time , .students , .Free{ /*<!--عدد الاسابيع مع الشعار -->*/   /*<!--عدد الطلاب مع الشعار-->*/
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            .svg{
+                width: 16px;
+                height: 16px;
+            }
+            .view{
+                display: flex;
+                justify-content: space-between;
+            }
+            .mony{
+                color: #9D9D9D;
+                text-decoration: line-through;
+            }
+            a{
+                font-family: "jost";
+                font-size: 18px;
+                font-weight: 500;
+                text-decoration: none;
+                color: #000000;
+            }
+            .F{
+                color:  #55BE24;
+            }
+            .Photography {
+                width: 114px;
+                height: 40px;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                background-color:#000000;
+                border-radius: 8px;
+                font-weight: 400;
+                color:  #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+#section3{ /*القسم الثالث*/
+    background-image: url(./../images/section3/section3bg.png);
+    background-size: 100% 100%;
+    border-radius: 20px;
+    margin: 0 70px 70px 70px;
+    height: 324px;
+    .content{
+        display: flex;
+        justify-content: space-between;
+    }
+    .MORE{/*الحاوية على الكتابة*/
+        width: 100%;
+        max-width: 450px;
+        margin: 55px 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    h5{
+        font-weight: 600;
+        color: #555555;
+    }
+    p{
+        font-weight: 400;
+    }
+    p ,  .Explorer{
+        font-family: "jost";
+        font-size: 18px;
+    }
+    .Explorer{
+        height: 48px;
+        width: 177px;
+        border: none;
+        border-radius: 24px;
+        background-color: #FF782D;
+        color: #FFFFFF;
+        font-weight: 500;
+    }
+}
+#section4{/*القسم الرابع*/
+    margin: 0 70px 70px 70px;
+    background-color:  #ffffff;
+    display: flex;;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    .card{
+        height: 161px;
+        width: 284px;
+        max-width:100%;
+        border-radius: 20px;
+        background-color: #F5F5F5;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        h2{
+            font-size: 32px;
+            font-weight: 600;
+            color: #FF782D;
+        }
+        p{
+            font-family: "jost";
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+}
+#section5{/*القسم الخامس*/
+    margin: 0 70px 70px 70px;
+    background-color:  #ffffff;
+    max-width: 100%;
+    .content{ /*<!--الحاوية على الصورة وعلى الكتابة-->*/
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .info{/*<!--الحاوية على قسم الكتابة-->*/
+            width: 520px;
+            max-width: 100%;
+            margin: 43px 44px 43px 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 24px;
+            h2{
+                font-size: 32px;
+                font-weight: 600;
+                margin: 0 180px 0 0;
+            }
+            p {
+                font-weight: 400;
+                max-width: 100%;
+            }
+            p , .Explorer{
+                font-family: "jost";
+                font-size: 18px;
+            }
+            .Certification{
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                .trou{
+                    display: flex;
+                    gap: 8px;
+                }
+            }
+            .Explorer{
+                width: 177px;
+                height: 48px;
+                border: none;
+                border-radius: 24px;
+                background-color: #FF782D;
+                font-weight: 500;
+                color: #ffffff;
+            }
+        }
+    }
+}
+#section6{/*القسم السادس*/
+background-image: url("./../images/section6/Academy.png");
+background-size: cover;
+height: 250px;
+max-width: 100%;
+margin: 0 70px 70px 70px;
+padding: 65px 18px;
+border-radius: 20px;
+.content{/*<!--الدف الرئيسي الحاوي على قسم الكتابة وقسم الأزرار-->*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .student{/*<!--الدف الحاوي على كتابة وشعار الطالب-->*/
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        img{
+            width: 120px;
+            height: 120px;
+        }
+        h4{
+            font-weight: 600px;
+            font-size: 20px;
+            max-width: 100%;
+        }
+    }
+    .button{/*<!--الديف الحاوي على الأزرار-->*/
+            display: flex;
+            gap: 20px;
+            .student , .Instructor{
+                height: 48px;
+                border-radius: 24px;
+                font-family: "jost";
+                font-size: 18px;
+                font-weight: 500;
+            }
+            .student{ /*الزر الأول من على اليسار*/
+                width: 156px;
+                border: 2px solid #FF782D;
+                background: none;
+                color: #FF782D;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .Instructor{/*الزر الثاني من على اليمين*/
+                    width: 219px;
+                    border: none;
+                    background-color: #FF782D;
+                    color: #ffffff;
+                }
+            }
+    }
+}
+/*تنسيق الصفحة الثانية صفحة ال Course*/  /*تنسيق الصفحة الثالثة صفحة ال Blog*/
+#section7{
+    margin: 56px 70px 0 70px;
+    max-width: 100%;
+    .All{ /*الحاوية على العنوان مع ال الإنبويت*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            font-family: "Exo";
+            font-size: 36px;
+            font-weight: 600;
+            color: #000000;
+        }
+        form{
+            width: 350px;
+            max-width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+            position: relative; /* تأكد من استخدام position: relative للحاوية */
+            input{
+                width: 270px;
+                height: 31px;
+                font-family: "jost";
+                font-weight: 400;
+                border: none;
+                border-bottom: 2px solid black;
+                outline: none;
+                padding: 10px;
+                padding-right: 30px; 
+            }
+            .Search{
+                position: absolute;
+                right: 65px; 
+                width: 20px;
+                height: 20px;
+            }
+            .icon{
+                font-size: 15px;
+                width: 15px;
+                height: 15px;
+                color: #000000;
+            }
+        }
+    }
+    .Contact{ /*<!--الحاوية الكبيرية  على 6-->*/
+        background-color:#ffffff;
+        margin: 50px 0 0 0;
+        max-width: 100%;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+        .card{ /* خصائص الكرت الواحد الحاوية على الصورة والكتابة */
+            background-color:#ffffff;
+            border: 1px solid #EAEAEA ;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            
+            .Poitras{    /*الصورة الرئيسة للكرت */
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-top-left-radius: 20px ;
+                border-top-right-radius: 20px ;
+            }
+            .info{ /*الحاوية  على الكتابة الموجودة تحت الصورة */
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+            .by{  /*by Determined-Poitras الحاوية على */
+                display: flex;
+                align-items: center;
+                gap: 4px;
+            }
+            span , p{
+                font-family: "jost";
+                font-weight: 400;
+            }
+            span{
+                color: #555555;
+            }
+            h4{
+                font-size: 20px;
+                font-weight: 600;
+                padding: 0 50px 0 0;
+            }
+            .Looking{ /*تنسيق النص الموجود فقط بصفحة Blog*/
+                padding: 0 50px 0 0;
+            }
+            .content{  /*<!--الحاوية على عددالطلاب و الأسابيع-->*/
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                border-bottom: 1px solid #EAEAEA;
+                padding: 0 0 16px 0;
+                margin: 0;
+                p{
+                    color: #555555;
+                    font-weight: 400;
+                }
+            }
+            .time , .students , .Free{ /*<!--عدد الاسابيع مع الشعار -->*/   /*<!--عدد الطلاب مع الشعار-->*/  /*<!--الخاصة بصفحة Blog الحاوية على التاريخ سنوي-->*/
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            .svg{
+                width: 16px;
+                height: 16px;
+            }
+            .view{
+                display: flex;
+                justify-content: space-between;
+            }
+            .mony{
+                color: #9D9D9D;
+                text-decoration: line-through;
+            }
+            a{
+                font-family: "jost";
+                font-size: 18px;
+                font-weight: 500;
+                text-decoration: none;
+                color: #000000;
+            }
+            .F{
+                color:  #55BE24;
+            }
+            .Photography {
+                width: 114px;
+                height: 40px;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                background-color:#000000;
+                border-radius: 8px;
+                font-weight: 400;
+                color:  #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+.number{/*<!--الحاوية على تنقلات الصفحات الأرقام-->*/
+    width: 288px;
+    margin: 70px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        width: 48px;
+        height: 48px;
+        text-decoration: none;
+        font-family: "jost";
+        font-weight: 500;
+        font-size: 18px;
+        color: #000000;
+        border-radius: 50%;
+        border: 1px solid #EAEAEA ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .one{
+        color: #F5F5F5;
+        background-color: #000000;
+    }
+}
+#section8{ /*تنسيق صفحة ال contact القسم الأول من الصفحة */
+    margin: 56px 70px 70px 70px;
+.content{ /*<!--الحاوية على قسم الكتابة والخريطة-->*/
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+    .info{ /*<!--الحاوية على الكتابة-->*/
+        width: 410px;
+        max-width: 100%;
+        height: 269px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap:24px;
+        h1{
+            font-size: 36px;
+            font-weight: 600px;
+        }
+        p{ 
+            color: #555555;
+            font-family: "jost";
+            font-size: 18px;
+            font-weight: 400;
+            padding: 0 40px 0 0;
+        }
+        .Need{ /*<!--الحاوية على رقم الهاتف والشغار--> <!--الحاوية على الإيميل والشغار-->*/
+            max-width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 24px;
+            h5{
+                font-weight: 600;
+            }
+            .card{ /*<!--الحاوية على صورة الشعار-->*/
+                background-color: #F5F5F5;
+                border-radius: 8px;
+                width: 56px;
+                max-width: 100%;
+                height: 56px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .map{ /*الخريطة*/
+        height: 390px;
+        width: 783px;
+        max-width: 100%;
+        border: none;
+        border-radius: 20px;
+        display: flex;
+        flex-grow: 1;
+        }
+    }
+}
+#section9 {   /*تنسيق صفحة ال contact القسم الثاني من الصفحة */
+    margin: 0 70px 70px 70px;        
+    display: flex;        
+    flex-direction: column;        
+    gap: 30px;
+    h2 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+    p {
+        font-family: "jost";
+        font-weight: 400;
+        font-size: 18px;
+        max-width: 100%;
+    }
+    form {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .input {/*<!--الحاوية ديف عل إنبوت الإسم والإيميل-->*/
+            display: flex;
+            gap: 20px;
+            .name {/*تنسيق الإنبوت الخاص بالاسم و الإيميل*/
+                border-radius: 8px;
+                border: 1px solid #9D9D9D;
+                width: 100%;
+                padding: 10px 16px;
+                flex-grow: 1;
+            }
+        }
+        textarea { /*تنسيق ال textarea*/
+            max-width: 100%;
+            min-height: 110px;
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid #9D9D9D;
+            width: 100%;
+        }
+        .checkbox { /*<!--الحاوية على التشيك بوكس-->*/
+            display: flex;
+            gap: 4px;
+            cursor: pointer;
+            accent-color: #9D9D9D;
+        }
+    }
+    button { /*تنسيق الزر*/
+        width: 170px;
+        height: 48px;
+        border: none;
+        border-radius: 24px;
+        background-color: #FF782D;
+        color: #FFFFFF;
+        font-family: "jost";
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+#section10{ /*<!--تنسيق صفحة ال FAQs-->*/
+    margin: 56px 70px 0 70px;
+    .card{ /*<!--الحاوية على العناصر-->*/
+        margin: 50px 0;
+        display: grid;
+        grid-template-rows: repeat(5 , 64px);
+        grid-template-columns: repeat(2 , 1fr);
+        gap:30px;
+        select , .select{ /* select مع العنصر الثالث الديف المسمى ب صف السليكت  و تنسيق ال */
+            padding: 20px 30px;
+            background-color: #F5F5F5;
+            border: none;
+            border-radius: 8px;
+            appearance: none; /* إزالة النمط الافتراضي */
+            background-image: url("./../images/FAQs/Vector.svg"); /* سهم مخصص */
+            background-repeat: no-repeat;
+            background-position: right 20px center; /* تحديد موقع السهم */
+            background-size: 10px;
+            font-weight: 600;
+        }
+        .select{ /*العنصر الثالث الديف المسمى ب صف السليكت */
+            background-image: url("./../images/FAQs/Vector.svg"); /* سهم مخصص */
+            background-repeat: no-repeat;
+            background-position: right 20px top 25px; /* تحديد موقع السهم */
+            background-size: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            h5{
+                color: #FF782D;
+            }
+            p{
+                font-size: 18px;
+                font-weight: 400;
+                font-family: "jost";
+                color: #555555;
+                padding-right: 45px;
+            }
+        }
+        .item3{ /*العنصر الثالث*/
+            grid-column: 1;
+            grid-row: 2 / span 2;
+        }
+    }
+    img{
+        max-width: 556px;
+        min-height: 312px;
+        background-position: bottom left;
+    }
+}
+#section11{ /*<!--تنسيق صفحة ال Login Register-->*/
+    margin: 56px 70px 70px 70px;
+    display: flex;
+    gap: 30px;
+    .card{ /*<!--الحاوية على مربع Login-->    <!--الحاوية على مربع Register-->*/
+        padding: 30px;
+        border: 1px solid #EAEAEA;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 30px;
+        max-width: 100%;
+        h2{
+            font-size: 32px;
+            font-weight: 600;
+        }
+        a{
+            text-decoration: none;
+            color: #000000;
+            font-family: "jost";
+            font-size: 18px;
+            font-weight: 400;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .input{
+                height: 48px;
+                border: 1px solid #9D9D9D;
+                border-radius: 8px;
+                padding: 10px 16px;
+            }
+            .password{
+                background-image:url("./../images/Login-Register/Vector.svg");
+                background-repeat: no-repeat;
+                background-position: center right 16px;
+            }
+            .Remember{
+                display: flex;
+                gap: 4px;
+            }
+            button{
+                height: 48px;
+                border: none;
+                border-radius: 24px;
+                background-color: #FF782D;
+                color: #FFFFFF;
+                font-family: "jost";
+                font-size: 18px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+    .card1{
+        height: 100%;
+    }
+}
+footer{ /*التذيل*/
+    background-color: #F5F5F5;
+    min-height: 458px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    p{
+        font-family: "jost";
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .content{ /*<!--الحاوية الرئيسية على 4 ديفات-->*/
+        width: 100%;
+        display: flex;
+        padding: 50px 70px;
+        justify-content: space-between;
+        max-width: 100%;
+        .info , .GET{
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+        .info{
+            width: 412px;
+            img{
+                width: 166px;
+                height: 30px;
+            }
+            p{
+                font-family: "jost";
+                font-weight: 400;
+                font-size: 18px;
+                margin-right: 70px;
+                color: #555555;
+            }
+        }
+        .GET{
+            width: 191px;
+            max-width: 100%;
+            .link{
+                display: flex;
+                flex-direction: column;
+                line-height: 45px;
+                a{
+                    text-decoration: none;
+                    font-family: "jost";
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #555555;
+                }
+                a.Business:hover{
+                    color: #FF782D;
+                }
+            }
+        }
+        .CONTACT{
+            width: 340px;
+            max-width: 100%;
+            margin-right: 70px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            .pargraph{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                p{
+                    font-family: "jost";
+                    font-size: 400;
+                    font-size: 18px;
+                    color: #555555;
+                }
+                a{
+                    color: #555555;
+                }
+                .commaction a #pinterest:hover{
+                    color: #FF782D;
+                }
+            } 
+        }
+    }
+} 
+@media screen and (max-width:992px) {
+    nav , .hero {   
+        padding: 30px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    nav ul, nav .link{
+        display: none; 
+    }
+    nav .bars{
+        display: block;
+    }
+    .hero{
+        text-align: center;
+        background-image: url("./../images/header/raghad.png");
+        background-position:center center;
+    }
+    .Transportation{    /*تنسيق شريط التنقلات بين صفحة الهوم و الصفحات الأخرى*/
+        padding: 12px 20px;
+        max-width: 100%;
+    }
+    .hero h1 , .hero p{
+        text-align: center;
+    }
+    .Build , #section1 .Top , #section2 .Top , #section3 .MORE{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #section1{
+        padding: 60px 20px;
+        .All{
+            position: absolute;
+            bottom: -20px;
+        }
+        .Categories{
+            flex-direction: column; 
+            align-items: center; 
+        }
+    }
+    #section2{
+        padding:60px 20px 20px 20px;
+        .Categorie{
+            flex-direction: column;
+            align-items: center;
+        }
+        .All{
+            position: absolute;
+            bottom: -60px;
+        }
+    }
+    #section3{
+        background-image: url("./../images/section3/sectionbg.png");
+        background-position: center center;
+        margin: 90px 0 70px 0;
+        border-radius: 0;
+        .content{
+            flex-direction: column; 
+            align-items: center; 
+        }
+        .MORE{
+            margin: 20px; 
+        }
+    }
+    #section4{
+        padding: 0 20px;
+        margin: 0 20px;
+        .card{
+            width: 100%;
+            h , p{
+                text-align: center;
+            }
+        }
+    }
+    #section5{
+        .content{
+            flex-direction: column-reverse;
+            max-width: 1226px;
+            margin-left: 0;
+            .skill{
+                max-width: 520px;
+                height: 257px;
+            }
+            .info{
+                max-width: 320px;
+                height: 424px;
+                h2{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    #section6{
+        background-image: url("./../images/section6/Academy.png");
+        background-size: contain;/*لم أعرف سبب المشكلة حتى عندما أضفت نو الربيت لم تحل */
+        border-radius: 0;
+        min-height: 400px;
+        margin: 0 0 70px 0;
+        .content{
+            width: 100%;
+            height: 252px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        .student , .button{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 16px;
+            }
+        .button{
+            gap: 20px;
+        }
+        h4{
+            text-align: center;
+        }
+    }
+}
+    footer .content{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+    footer .Powered{
+        text-align: center;
+        padding: 0 70px;
+        margin-bottom: 50px;
+    }
+    #section7{  /*تنسيق قسم من صفحة الكورس*/  /*تنسيق قسم من صفحة Blog*/
+        margin: 56px 20px;
+        .All{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 24px;
+        }
+        .Contact{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    #section8 { 
+        margin: 56px 20px; 
+        .content { 
+            display: flex; 
+            flex-direction: column; 
+        } 
+        .map { 
+            min-height: 357px; 
+            width: 100%; 
+            margin-top: 30px; /* إضافة مساحة أعلى الخريطة للشاشات الصغيرة */ 
+        } 
+    } 
+    #section9 {
+        margin: 56px 20px;
+        padding: 0 5px; 
+        form {
+            max-width: 100%;
+            .input {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                margin: 0;
+                .name {
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    #section10{
+        margin: 56px 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        .card{
+            display: flex;
+            flex-direction: column;
+        }
+        img{
+            width: 100%;
+        }
+        .item3{
+            min-height: 192px;
+        }
+    }
+    #section11{
+        margin: 56px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
